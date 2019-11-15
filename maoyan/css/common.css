@@ -1,0 +1,150 @@
+/*公共样式*/
+* {
+	margin: 0;
+	padding: 0;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.active {
+	color: #ef4238;
+	border-bottom: 2px solid #ef4238;
+}
+.navbar-arrow {
+   width: 100%;
+   height: 50px;
+   background-color: #e54847;
+   display: none;
+}
+.navbar-arrow .icon-back {
+	display: inline-block;
+    width: 22.5px;
+    height: 22.5px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.icon-back:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 15px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.movie-header {
+	position: relative;
+	height: 188px;
+	cursor: pointer;
+	display: none;
+}
+.movie-header .movie-filter {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+}
+.movie-header .poster-bg{
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	overflow: hidden;
+	filter: blur(1.2rem);
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: .55;
+}
+.movie-header .detail .poster img {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100px;
+	height: 150px;
+	box-sizing: border-box;
+}
+.movie-header .detail {
+	height: 150px;
+	padding: 19px 30px 19px 15px;
+}
+.detail-content {
+	position: absolute;
+	top: 22px;
+	left: 30%;
+	width: 50%;
+	background-color: transparent;
+	color: #fff;
+}
+.detail-content .detail-title {
+	font-size: 20px;
+	font-weight: 700;
+	margin-top: -5px;
+}
+.detail-content .detail-en-name,
+.detail-content .detail-cat, 
+.detail-content .detail-desc,
+.detail-content .detail-star {
+	margin-top: 5px;
+    font-size: 12px;
+    color: #fff;
+    opacity: .8;
+}
+.detail-content .detail-score{
+	font-size: 18px;
+    font-weight: 700;
+    color: #fc0;
+    margin-top: 11px;
+}
+.detail-container {
+	width: 100%;
+	height: 550px;
+	background-color: rgba(62, 90, 102);
+}
+.detail-container .movie-info {
+	padding-top: 15px;
+}
+.detail-container .desc-info,
+.detail-container .movie-desc-info{
+	font-size: 14px;
+	color: #fff;
+	margin-left: 15px;
+	text-align: justify;
+}
+.detail-container .movie-desc-info {
+	line-height: 25px;
+	margin: 13px 15px;
+	text-align: justify;
+}
+.detail-container .movie-photos {
+	display: flex;
+	justify-content: flex-start;
+    align-items: flex-start;
+    overflow-x: scroll;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+.detail-container .movie-photos-title {
+	font-size: 14px;
+	color: #fff;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+.detail-container .movie-photos img {
+	width: 100%;
+	height: 100%;
+	margin-right: 7px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
